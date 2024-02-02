@@ -1,0 +1,152 @@
+:root {
+  --input-fondo: white;
+  --muted: #ecececd3;
+  --primario: #177c668f;
+  --surface: #7ddbc775;
+  --secundario: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  background-color: var(--primario);
+}
+
+header,
+footer {
+  background-color: var(--primario);
+  padding: .5rem;
+}
+
+header h1 {
+  color: var(--secundario);
+  letter-spacing: .3rem;
+}
+
+.icon-calc {
+  width: 1rem;
+  margin-right: .5rem;
+  display: inline-block;
+}
+
+.icon-calc::before {
+  content: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'><path fill='white' d='M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM96 64H288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM64 416c0-17.7 14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM192 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 448a32 32 0 1 1 0-64 32 32 0 1 1 0 64z'/></svg>");
+  width: 1rem;
+}
+
+.img-flotante {
+  position: absolute;
+  z-index: 100;
+  bottom: .5rem;
+  left: 1rem;
+  width: 20vw;
+  height: 30vh;
+}
+
+.img-container {
+  flex: 1 1 0;
+  width: 25%;
+}
+
+.img-container img {
+  height: 6rem;
+  margin: auto;
+  display: block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+footer p {
+  text-align: end;
+  color: var(--muted);
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.content {
+  width: 600px;
+  margin: 1rem auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: .5rem;
+  background-color: var(--surface);
+  border-radius: .5rem;
+}
+
+.card .titulo {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secundario);
+  font-weight: bold;
+  letter-spacing: .4rem;
+}
+
+.card .subtitulo {
+  color: var(--primario);
+}
+
+button {
+  display: block;
+  margin: .2rem auto;
+  padding: .4rem;
+  font-size: 1rem;
+  border: 3px solid var(--muted);
+  background: var(--surface);
+  color: var(--secundario);
+  font-weight: bold;
+  border-radius: .5rem;
+  transition: .5s all ease;
+}
+
+button:hover {
+  background: var(--input-fondo);
+  color: var(--primario);
+}
+
+.input {
+  position: relative;
+  margin-bottom: .4rem;
+}
+
+.input input {
+  padding: .3rem;
+  padding-top: 1rem;
+  width: 100%;
+  border: none;
+  background-color: var(--muted);
+}
+
+.input input:focus,
+.input input:focus-visible,
+.input input:hover {
+  background-color: var(--input-fondo);
+  outline: none;
+  border: none;
+}
+
+.input label {
+  position: absolute;
+  font-size: .7rem;
+  margin-left: .5rem;
+  top: 0;
+}
