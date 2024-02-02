@@ -32,7 +32,7 @@
         <p class="subtitulo" id="textalert">No has calculado nada aún</p>
       </div>
       <div class="img-container">
-        <img src="/imagenes/silueta.png" id="resultImg">
+        <img src="./imagenes/silueta.png" id="resultImg">
       </div>
     </article>
     <section>
@@ -40,7 +40,7 @@
         Calcular
       </button>
     </section>
-    <img src="/imagenes/b.png" class="img-flotante">
+    <img src="./imagenes/b.png" class="img-flotante">
   </section>
   <footer>
     <p>
@@ -58,35 +58,35 @@
     let imc = peso / (altura * altura);  // let declara una variable y le asigna un valor con =
     if (imc < 16) {      //ejemplo de condicional anidado
       textalert.innerHTML = 'Infrapeso: Delgadez Severa';
-      resultImg.setAttribute("src", "/imagenes/flaca.png")
+      resultImg.setAttribute("src", "./imagenes/flaca.png")
     }
     else if (16 <= imc && imc <= 16.99) {   //  && es un operador lógico equivalente a AND
       textalert.innerHTML = 'Infrapeso: Delgadez moderada';    // en textalert se muestra el resultado correspondiente
-      resultImg.setAttribute("src", "/imagenes/flaca.png")
+      resultImg.setAttribute("src", "./imagenes/flaca.png")
     }
     else if (17 <= imc && imc <= 18.49) {
       textalert.innerHTML = 'Infrapeso: Delgadez aceptable';
-      resultImg.setAttribute("src", "/imagenes/delgada.png")
+      resultImg.setAttribute("src", "./imagenes/delgada.png")
     }
     else if (18.50 <= imc && imc <= 24.99) {
       textalert.innerHTML = 'Peso Normal';
-      resultImg.setAttribute("src", "/imagenes/delgada.png")
+      resultImg.setAttribute("src", "./imagenes/delgada.png")
     }
     else if (25.00 <= imc && imc <= 29.99) {
       textalert.innerHTML = 'Sobrepeso';
-      resultImg.setAttribute("src", "/imagenes/pesoaceptable.png")
+      resultImg.setAttribute("src", "./imagenes/pesoaceptable.png")
     }
     else if (30.00 <= imc && imc <= 34.99) {
       textalert.innerHTML = 'Obeso: Tipo I';
-      resultImg.setAttribute("src", "/imagenes/gorda.png")
+      resultImg.setAttribute("src", "./imagenes/gorda.png")
     }
     else if (35.00 <= imc && imc <= 40.00) {
       textalert.innerHTML = 'Obeso: Tipo II';
-      resultImg.setAttribute("src", "/imagenes/gorda.png")
+      resultImg.setAttribute("src", "./imagenes/gorda.png")
     }
     else if (imc > 40.00) {
       textalert.innerHTML = 'Obeso: Tipo III';
-      resultImg.setAttribute("src", "/imagenes/gorda.png")
+      resultImg.setAttribute("src", "./imagenes/gorda.png")
     }
   }
   function validar() {
@@ -98,7 +98,7 @@
     }
     else {
       textalert.innerHTML = 'Ingresa primero tus valores'
-      resultImg.setAttribute("src", "/imagenes/silueta.png")
+      resultImg.setAttribute("src", "./imagenes/silueta.png")
     }
   }
 </script>
